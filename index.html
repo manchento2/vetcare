@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VetCare Centro Veterinario Integral en San Luis – Consultas, cirugías, urgencias 24h, vacunación y estética canina. Turnos fáciles por WhatsApp." />
+  <meta name="keywords" content="veterinaria san luis, clínica veterinaria, urgencias veterinarias, vacunación mascotas, peluquería canina" />
+  <meta name="author" content="VetCare San Luis" />
+  <meta property="og:title" content="VetCare – Centro Veterinario Integral | San Luis" />
+  <meta property="og:description" content="Cuidamos a tu mascota con amor y tecnología. Atención 24/7, equipo certificado y todas las especialidades." />
+  <meta property="og:type" content="website" />
+
+  <title>VetCare – Centro Veterinario Integral | San Luis</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       HEADER / NAVEGACIÓN
+  ═══════════════════════════════════════════════ -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <!-- Logo -->
+      <a href="#inicio" class="nav__logo" id="nav-logo">
+        <div class="logo__icon">
+          <i class="fa-solid fa-paw"></i>
+        </div>
+        <div class="logo__text">
+          <span class="logo__brand">VetCare</span>
+          <span class="logo__sub">Centro Veterinario</span>
+        </div>
+      </a>
+
+      <!-- Menú de navegación -->
+      <ul class="nav__menu" id="nav-menu">
+        <li class="nav__item">
+          <a href="#inicio" class="nav__link active" id="nav-inicio">Inicio</a>
+        </li>
+        <li class="nav__item">
+          <a href="#servicios" class="nav__link" id="nav-servicios">Servicios</a>
+        </li>
+        <li class="nav__item">
+          <a href="#nosotros" class="nav__link" id="nav-nosotros">Nosotros</a>
+        </li>
+        <li class="nav__item">
+          <a href="#urgencias" class="nav__link urgencias-link" id="nav-urgencias">
+            <i class="fa-solid fa-circle-exclamation"></i> Urgencias
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#contacto" class="nav__link" id="nav-contacto">Contacto</a>
+        </li>
+      </ul>
+
+      <!-- CTA y toggle móvil -->
+      <div class="nav__actions">
+        <a href="#contacto" class="btn btn--primary nav__cta" id="nav-cta-btn">
+          <i class="fa-regular fa-calendar-check"></i>
+          Agendar Turno
+        </a>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════════════════════ -->
+    <section class="hero" id="inicio">
+      <div class="hero__overlay"></div>
+
+      <!-- Partículas decorativas -->
+      <div class="hero__particles">
+        <div class="particle particle--1"><i class="fa-solid fa-paw"></i></div>
+        <div class="particle particle--2"><i class="fa-solid fa-heart"></i></div>
+        <div class="particle particle--3"><i class="fa-solid fa-star"></i></div>
+        <div class="particle particle--4"><i class="fa-solid fa-paw"></i></div>
+        <div class="particle particle--5"><i class="fa-solid fa-heart"></i></div>
+      </div>
+
+      <div class="hero__content container">
+        <div class="hero__badge">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Atención Veterinaria de Excelencia · San Luis</span>
+        </div>
+
+        <h1 class="hero__title">
+          Tu mascota merece<br />
+          <span class="hero__title--highlight">el mejor cuidado</span><br />
+          del mundo
+        </h1>
+
+        <p class="hero__subtitle">
+          En <strong>VetCare</strong> combinamos amor por los animales con tecnología médica de vanguardia.
+          Consultas, cirugías, urgencias 24h y mucho más — todo en un solo lugar.
+        </p>
+
+        <div class="hero__cta-group">
+          <a href="#contacto" class="btn btn--primary btn--lg" id="hero-reservar-btn">
+            <i class="fa-regular fa-calendar-check"></i>
+            Reservar Turno
+          </a>
+          <a href="#urgencias" class="btn btn--danger btn--lg pulse-btn" id="hero-urgencias-btn">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            Urgencias 24h
+          </a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat-card">
+            <span class="stat__number" data-count="2500">0</span><span class="stat__plus">+</span>
+            <span class="stat__label">Pacientes Felices</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat__number" data-count="12">0</span><span class="stat__plus">+</span>
+            <span class="stat__label">Años de Experiencia</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-card">
+            <span class="stat__number" data-count="8">0</span>
+            <span class="stat__label">Veterinarios Especialistas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen hero -->
+      <div class="hero__image-wrap">
+        <div class="hero__image-card">
+          <img
+            src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=600&q=80"
+            alt="Veterinaria examinando a un perro golden retriever"
+            class="hero__img"
+            loading="eager"
+          />
+          <div class="hero__image-badge">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <strong>¡Cita confirmada!</strong>
+              <span>Próxima: Hoy 15:30hs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll-indicator">
+        <span>Deslizá para explorar</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SOBRE NOSOTROS
+    ═══════════════════════════════════════════════ -->
+    <section class="about section" id="nosotros">
+      <div class="container">
+        <div class="about__grid">
+
+          <!-- Imágenes -->
+          <div class="about__images" data-aos="fade-right">
+            <div class="about__img-main">
+              <img
+                src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=500&q=80"
+                alt="Clínica veterinaria VetCare"
+                loading="lazy"
+              />
+            </div>
+            <div class="about__img-secondary">
+              <img
+                src="https://images.unsplash.com/photo-1559190394-df5a28aab5c5?w=400&q=80"
+                alt="Veterinario con mascota"
+                loading="lazy"
+              />
+              <div class="about__experience-badge">
+                <span class="exp__number">12</span>
+                <span class="exp__text">Años de<br/>Experiencia</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contenido -->
+          <div class="about__content" data-aos="fade-left">
+            <div class="section__tag">
+              <i class="fa-solid fa-paw"></i> Nuestra Historia
+            </div>
+            <h2 class="section__title">
+              Cuidamos a tus mascotas<br />
+              <span class="text--gradient">como si fueran propias</span>
+            </h2>
+            <p class="about__description">
+              Fundada en 2012, <strong>VetCare San Luis</strong> nació del amor por los animales y la convicción de que cada mascota merece atención médica de excelencia. Hoy somos el centro veterinario de referencia en San Luis, con un equipo de más de 8 especialistas certificados.
+            </p>
+            <p class="about__description">
+              Contamos con quirófanos equipados, sala de diagnóstico por imágenes, unidad de cuidados intensivos y servicio de emergencias las 24 horas. Porque la salud de tu compañero no tiene horario.
+            </p>
+
+            <!-- Valores -->
+            <div class="about__values">
+              <div class="value-item">
+                <div class="value__icon value__icon--green">
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <div class="value__text">
+                  <h4>Amor por los Animales</h4>
+                  <p>Cada paciente recibe trato cariñoso y personalizado.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value__icon value__icon--blue">
+                  <i class="fa-solid fa-microscope"></i>
+                </div>
+                <div class="value__text">
+                  <h4>Tecnología Médica</h4>
+                  <p>Equipos de diagnóstico modernos y actualizados.</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value__icon value__icon--teal">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="value__text">
+                  <h4>Disponibles 24/7</h4>
+                  <p>Emergencias y consultas urgentes sin horario.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#contacto" class="btn btn--primary" id="about-cta-btn">
+              <i class="fa-solid fa-user-doctor"></i>
+              Conocé nuestro equipo
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         SERVICIOS
+    ═══════════════════════════════════════════════ -->
+    <section class="services section section--gray" id="servicios">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__tag">
+            <i class="fa-solid fa-stethoscope"></i> Nuestros Servicios
+          </div>
+          <h2 class="section__title">
+            Todo lo que tu mascota<br />
+            <span class="text--gradient">necesita, en un lugar</span>
+          </h2>
+          <p class="section__subtitle">
+            Ofrecemos una atención integral, desde chequeos preventivos hasta cirugías complejas y urgencias 24h.
+          </p>
+        </div>
+
+        <div class="services__grid">
+
+          <!-- Servicio 1: Consultas -->
+          <article class="service-card" id="serv-consultas">
+            <div class="service-card__icon service-card__icon--teal">
+              <i class="fa-solid fa-stethoscope"></i>
+            </div>
+            <h3 class="service-card__title">Consultas Generales y Especialidades</h3>
+            <p class="service-card__desc">
+              Diagnóstico clínico completo con veterinarios especialistas en medicina interna, dermatología, cardiología y más.
+            </p>
+            <ul class="service-card__features">
+              <li><i class="fa-solid fa-check"></i> Revisión preventiva anual</li>
+              <li><i class="fa-solid fa-check"></i> Diagnóstico diferencial</li>
+              <li><i class="fa-solid fa-check"></i> Tratamientos personalizados</li>
+            </ul>
+            <a href="#contacto" class="service-card__btn" id="btn-consultas">
+              Consultar ahora <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </article>
+
+          <!-- Servicio 2: Vacunación -->
+          <article class="service-card" id="serv-vacunacion">
+            <div class="service-card__icon service-card__icon--green">
+              <i class="fa-solid fa-syringe"></i>
+            </div>
+            <h3 class="service-card__title">Vacunación y Desparasitación</h3>
+            <p class="service-card__desc">
+              Planes de vacunación completos para perros, gatos y animales exóticos. Carnets de salud digitales incluidos.
+            </p>
+            <ul class="service-card__features">
+              <li><i class="fa-solid fa-check"></i> Vacunas esenciales y refuerzos</li>
+              <li><i class="fa-solid fa-check"></i> Desparasitación interna/externa</li>
+              <li><i class="fa-solid fa-check"></i> Carnet de salud digital</li>
+            </ul>
+            <a href="#contacto" class="service-card__btn" id="btn-vacunacion">
+              Consultar ahora <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </article>
+
+          <!-- Servicio 3: Cirugía -->
+          <article class="service-card" id="serv-cirugia">
+            <div class="service-card__icon service-card__icon--blue">
+              <i class="fa-solid fa-scalpel"></i>
+            </div>
+            <h3 class="service-card__title">Cirugía y Quirófano Equipado</h3>
+            <p class="service-card__desc">
+              Quirófano de última generación con anestesiología especializada para procedimientos seguros y efectivos.
+            </p>
+            <ul class="service-card__features">
+              <li><i class="fa-solid fa-check"></i> Cirugías de tejidos blandos</li>
+              <li><i class="fa-solid fa-check"></i> Ortopedia y traumatología</li>
+              <li><i class="fa-solid fa-check"></i> Monitoreo pre y post-operatorio</li>
+            </ul>
+            <a href="#contacto" class="service-card__btn" id="btn-cirugia">
+              Consultar ahora <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </article>
+
+          <!-- Servicio 4: Diagnóstico -->
+          <article class="service-card" id="serv-diagnostico">
+            <div class="service-card__icon service-card__icon--purple">
+              <i class="fa-solid fa-x-ray"></i>
+            </div>
+            <h3 class="service-card__title">Diagnóstico por Imágenes</h3>
+            <p class="service-card__desc">
+              Ecografía y radiología digital de alta resolución para diagnósticos precisos y no invasivos.
+            </p>
+            <ul class="service-card__features">
+              <li><i class="fa-solid fa-check"></i> Ecografía abdominal y cardíaca</li>
+              <li><i class="fa-solid fa-check"></i> Radiografía digital</li>
+              <li><i class="fa-solid fa-check"></i> Interpretación inmediata</li>
+            </ul>
+            <a href="#contacto" class="service-card__btn" id="btn-diagnostico">
+              Consultar ahora <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </article>
+
+          <!-- Servicio 5: Peluquería -->
+          <article class="service-card" id="serv-peluqueria">
+            <div class="service-card__icon service-card__icon--orange">
+              <i class="fa-solid fa-scissors"></i>
+            </div>
+            <h3 class="service-card__title">Peluquería y Estética</h3>
+            <p class="service-card__desc">
+              Servicio de grooming profesional para perros y gatos. Baño, corte, styling y tratamientos dermatológicos.
+            </p>
+            <ul class="service-card__features">
+              <li><i class="fa-solid fa-check"></i> Baño medicado y estético</li>
+              <li><i class="fa-solid fa-check"></i> Corte de uñas y pelo</li>
+              <li><i class="fa-solid fa-check"></i> Tratamientos antipulgas</li>
+            </ul>
+            <a href="#contacto" class="service-card__btn" id="btn-peluqueria">
+              Consultar ahora <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </article>
+
+          <!-- Servicio 6: Urgencias -->
+          <article class="service-card service-card--featured" id="serv-urgencias">
+            <div class="service-card__badge">24h</div>
+            <div class="service-card__icon service-card__icon--red">
+              <i class="fa-solid fa-truck-medical"></i>
+            </div>
+            <h3 class="service-card__title">Urgencias 24 Horas</h3>
+            <p class="service-card__desc">
+              Equipo de guardia permanente para atender emergencias a cualquier hora. Porque los accidentes no avisan.
+            </p>
+            <ul class="service-card__features">
+              <li><i class="fa-solid fa-check"></i> Atención inmediata sin turno</li>
+              <li><i class="fa-solid fa-check"></i> UCI veterinaria</li>
+              <li><i class="fa-solid fa-check"></i> Guardia médica permanente</li>
+            </ul>
+            <a href="tel:+5426642220000" class="service-card__btn service-card__btn--urgent" id="btn-urgencias">
+              <i class="fa-solid fa-phone"></i> Llamar ahora
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         POR QUÉ ELEGIRNOS
+    ═══════════════════════════════════════════════ -->
+    <section class="benefits section" id="beneficios">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__tag">
+            <i class="fa-solid fa-trophy"></i> ¿Por qué elegirnos?
+          </div>
+          <h2 class="section__title">
+            La diferencia que<br />
+            <span class="text--gradient">tus mascotas merecen</span>
+          </h2>
+        </div>
+
+        <div class="benefits__grid">
+
+          <div class="benefit-card" id="benefit-24h">
+            <div class="benefit-card__icon">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+            <h3>Atención 24/7</h3>
+            <p>Guardias médicas permanentes para emergencias en cualquier momento del día o la noche.</p>
+          </div>
+
+          <div class="benefit-card" id="benefit-profesionales">
+            <div class="benefit-card__icon">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <h3>Profesionales Certificados</h3>
+            <p>Equipo de 8 veterinarios especialistas con certificaciones nacionales e internacionales.</p>
+          </div>
+
+          <div class="benefit-card" id="benefit-tecnologia">
+            <div class="benefit-card__icon">
+              <i class="fa-solid fa-microscope"></i>
+            </div>
+            <h3>Tecnología de Punta</h3>
+            <p>Equipamiento médico de última generación para diagnósticos precisos y tratamientos efectivos.</p>
+          </div>
+
+          <div class="benefit-card" id="benefit-instalaciones">
+            <div class="benefit-card__icon">
+              <i class="fa-solid fa-hospital"></i>
+            </div>
+            <h3>Instalaciones Modernas</h3>
+            <p>500m² de instalaciones diseñadas para el bienestar y comodidad de tus mascotas.</p>
+          </div>
+
+        </div>
+
+        <!-- Banner de urgencias -->
+        <div class="urgencias-banner" id="urgencias">
+          <div class="urgencias-banner__content">
+            <div class="urgencias-banner__icon">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div class="urgencias-banner__text">
+              <h3>¿Es una emergencia?</h3>
+              <p>Nuestro equipo de guardia está disponible las 24 horas, los 7 días de la semana. ¡No esperes!</p>
+            </div>
+          </div>
+          <div class="urgencias-banner__actions">
+            <a href="tel:+5426642220000" class="btn btn--white" id="urgencias-call-btn">
+              <i class="fa-solid fa-phone"></i> +54 266 422-0000
+            </a>
+            <a href="https://wa.me/5426642220000?text=Hola%2C%20tengo%20una%20urgencia%20veterinaria" target="_blank" class="btn btn--whatsapp" id="urgencias-wa-btn">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Urgencias
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         GALERÍA / TESTIMONIOS
+    ═══════════════════════════════════════════════ -->
+    <section class="testimonials section section--gray">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__tag">
+            <i class="fa-solid fa-star"></i> Testimonios
+          </div>
+          <h2 class="section__title">
+            Lo que dicen nuestros<br />
+            <span class="text--gradient">clientes satisfechos</span>
+          </h2>
+        </div>
+
+        <div class="testimonials__grid">
+
+          <div class="testimonial-card" id="test-1">
+            <div class="testimonial__stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial__text">
+              "VetCare salvó la vida de mi perro Rocky en una emergencia nocturna. El equipo fue increíblemente rápido y profesional. ¡Son los mejores veterinarios de San Luis!"
+            </p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">
+                <img src="https://i.pravatar.cc/60?img=1" alt="María González" loading="lazy" />
+              </div>
+              <div>
+                <strong>María González</strong>
+                <span>Mamá de Rocky 🐕</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" id="test-2">
+            <div class="testimonial__stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial__text">
+              "El servicio de peluquería es increíble. Mi gata Luna siempre sale hermosa y muy tranquila. Se nota que aman lo que hacen. Recomiendo VetCare al 100%."
+            </p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">
+                <img src="https://i.pravatar.cc/60?img=5" alt="Carlos Rodríguez" loading="lazy" />
+              </div>
+              <div>
+                <strong>Carlos Rodríguez</strong>
+                <span>Papá de Luna 🐱</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" id="test-3">
+            <div class="testimonial__stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial__text">
+              "La cirugía de cadera de mi bulldog fue perfecta. Proceso transparente, explicaciones claras y seguimiento post-operatorio impecable. Gracias a todo el equipo de VetCare."
+            </p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">
+                <img src="https://i.pravatar.cc/60?img=9" alt="Ana Martínez" loading="lazy" />
+              </div>
+              <div>
+                <strong>Ana Martínez</strong>
+                <span>Mamá de Toro 🐾</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         CONTACTO / FORMULARIO DE TURNO
+    ═══════════════════════════════════════════════ -->
+    <section class="contact section" id="contacto">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__tag">
+            <i class="fa-solid fa-calendar-check"></i> Reservar Turno
+          </div>
+          <h2 class="section__title">
+            Agendá tu turno<br />
+            <span class="text--gradient">fácil y rápido</span>
+          </h2>
+          <p class="section__subtitle">
+            Completá el formulario y nos contactaremos con vos en menos de 2 horas.
+          </p>
+        </div>
+
+        <div class="contact__grid">
+
+          <!-- Formulario -->
+          <div class="contact__form-wrap">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="owner-name" class="form__label">
+                    <i class="fa-solid fa-user"></i> Tu nombre
+                  </label>
+                  <input
+                    type="text"
+                    id="owner-name"
+                    name="owner_name"
+                    class="form__input"
+                    placeholder="Ej: Juan Pérez"
+                    required
+                    autocomplete="name"
+                  />
+                  <span class="form__error" id="error-owner-name"></span>
+                </div>
+
+                <div class="form__group">
+                  <label for="phone" class="form__label">
+                    <i class="fa-solid fa-phone"></i> Teléfono / WhatsApp
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form__input"
+                    placeholder="Ej: 266 422-0000"
+                    required
+                    autocomplete="tel"
+                  />
+                  <span class="form__error" id="error-phone"></span>
+                </div>
+              </div>
+
+              <div class="form__row">
+                <div class="form__group">
+                  <label for="pet-name" class="form__label">
+                    <i class="fa-solid fa-paw"></i> Nombre de tu mascota
+                  </label>
+                  <input
+                    type="text"
+                    id="pet-name"
+                    name="pet_name"
+                    class="form__input"
+                    placeholder="Ej: Rocky"
+                    required
+                  />
+                  <span class="form__error" id="error-pet-name"></span>
+                </div>
+
+                <div class="form__group">
+                  <label for="pet-species" class="form__label">
+                    <i class="fa-solid fa-dog"></i> Especie / Raza
+                  </label>
+                  <input
+                    type="text"
+                    id="pet-species"
+                    name="pet_species"
+                    class="form__input"
+                    placeholder="Ej: Perro – Golden Retriever"
+                  />
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label for="service" class="form__label">
+                  <i class="fa-solid fa-stethoscope"></i> Servicio requerido
+                </label>
+                <div class="form__select-wrap">
+                  <select id="service" name="service" class="form__select" required>
+                    <option value="" disabled selected>Seleccioná un servicio...</option>
+                    <option value="consulta">Consulta General</option>
+                    <option value="vacunacion">Vacunación y Desparasitación</option>
+                    <option value="cirugia">Cirugía</option>
+                    <option value="diagnostico">Diagnóstico por Imágenes</option>
+                    <option value="peluqueria">Peluquería y Estética</option>
+                    <option value="urgencia">Urgencia / Emergencia</option>
+                    <option value="otro">Otro / Consulta general</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down form__select-arrow"></i>
+                </div>
+                <span class="form__error" id="error-service"></span>
+              </div>
+
+              <div class="form__group">
+                <label for="message" class="form__label">
+                  <i class="fa-regular fa-message"></i> Mensaje / Fecha preferida
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form__textarea"
+                  placeholder="Contanos brevemente el motivo de la consulta y tu fecha/horario preferido..."
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full" id="form-submit-btn">
+                <i class="fa-regular fa-calendar-check"></i>
+                Solicitar Turno
+                <span class="btn__loader" id="btn-loader" style="display:none"></span>
+              </button>
+
+              <div class="form__success" id="form-success" style="display:none">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <strong>¡Solicitud enviada!</strong>
+                  <p>Te contactaremos en menos de 2 horas. También podés escribirnos por WhatsApp.</p>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Info de contacto -->
+          <div class="contact__info">
+            <div class="contact-info-card" id="contact-address">
+              <div class="contact-info__icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-info__content">
+                <h4>Dirección</h4>
+                <p>Av. Constitución 1452, Capital<br />San Luis, Argentina</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card" id="contact-phone">
+              <div class="contact-info__icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-info__content">
+                <h4>Teléfono</h4>
+                <a href="tel:+5426642220000">+54 (266) 422-0000</a><br />
+                <a href="tel:+5426642220001">+54 (266) 422-0001 (Urgencias)</a>
+              </div>
+            </div>
+
+            <div class="contact-info-card" id="contact-email">
+              <div class="contact-info__icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="contact-info__content">
+                <h4>Correo Electrónico</h4>
+                <a href="mailto:turnos@vetcaresanluis.com.ar">turnos@vetcaresanluis.com.ar</a><br />
+                <a href="mailto:info@vetcaresanluis.com.ar">info@vetcaresanluis.com.ar</a>
+              </div>
+            </div>
+
+            <div class="contact-info-card" id="contact-hours">
+              <div class="contact-info__icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div class="contact-info__content">
+                <h4>Horarios de Atención</h4>
+                <div class="hours__grid">
+                  <span>Lun – Vie</span><span>8:00 – 20:00hs</span>
+                  <span>Sábados</span><span>9:00 – 18:00hs</span>
+                  <span>Domingos</span><span>10:00 – 15:00hs</span>
+                  <span class="hours--urgent">Urgencias</span><span class="hours--urgent">24 / 7 hs</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mapa embed -->
+            <div class="contact__map" id="contact-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.4!2d-66.338!3d-33.295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDE3JzQyLjAiUyA2NsKwMjAnMTYuOCJX!5e0!3m2!1ses!2sar!4v1234567890"
+                width="100%"
+                height="220"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación VetCare San Luis"
+              ></iframe>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__grid">
+
+          <!-- Columna 1: Logo y descripción -->
+          <div class="footer__col footer__col--brand">
+            <a href="#inicio" class="nav__logo">
+              <div class="logo__icon">
+                <i class="fa-solid fa-paw"></i>
+              </div>
+              <div class="logo__text">
+                <span class="logo__brand">VetCare</span>
+                <span class="logo__sub">Centro Veterinario</span>
+              </div>
+            </a>
+            <p class="footer__desc">
+              Brindamos atención veterinaria integral con amor, tecnología y los más altos estándares médicos. Tu mascota, nuestra pasión.
+            </p>
+            <div class="footer__socials">
+              <a href="#" class="social-btn" id="footer-facebook" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-btn" id="footer-instagram" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="social-btn" id="footer-whatsapp" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="#" class="social-btn" id="footer-youtube" aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Columna 2: Links rápidos -->
+          <div class="footer__col">
+            <h4 class="footer__col-title">Navegación</h4>
+            <ul class="footer__links">
+              <li><a href="#inicio"><i class="fa-solid fa-chevron-right"></i> Inicio</a></li>
+              <li><a href="#nosotros"><i class="fa-solid fa-chevron-right"></i> Sobre Nosotros</a></li>
+              <li><a href="#servicios"><i class="fa-solid fa-chevron-right"></i> Servicios</a></li>
+              <li><a href="#beneficios"><i class="fa-solid fa-chevron-right"></i> ¿Por qué Elegirnos?</a></li>
+              <li><a href="#contacto"><i class="fa-solid fa-chevron-right"></i> Contacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Servicios -->
+          <div class="footer__col">
+            <h4 class="footer__col-title">Servicios</h4>
+            <ul class="footer__links">
+              <li><a href="#servicios"><i class="fa-solid fa-chevron-right"></i> Consultas Médicas</a></li>
+              <li><a href="#servicios"><i class="fa-solid fa-chevron-right"></i> Vacunación</a></li>
+              <li><a href="#servicios"><i class="fa-solid fa-chevron-right"></i> Cirugía</a></li>
+              <li><a href="#servicios"><i class="fa-solid fa-chevron-right"></i> Diagnóstico por Imágenes</a></li>
+              <li><a href="#servicios"><i class="fa-solid fa-chevron-right"></i> Peluquería Canina</a></li>
+              <li><a href="#urgencias"><i class="fa-solid fa-chevron-right"></i> Urgencias 24h</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 4: Contacto rápido -->
+          <div class="footer__col">
+            <h4 class="footer__col-title">Contacto Rápido</h4>
+            <ul class="footer__contact-list">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Av. Constitución 1452, San Luis</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+5426642220000">+54 (266) 422-0000</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:info@vetcaresanluis.com.ar">info@vetcaresanluis.com.ar</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-clock"></i>
+                <span>Urgencias: 24hs / 7 días</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer bottom -->
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-content">
+          <p>&copy; 2024 <strong>VetCare Centro Veterinario Integral</strong>. Todos los derechos reservados.</p>
+          <div class="footer__bottom-links">
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Términos y Condiciones</a>
+            <a href="#">Mapa del Sitio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════
+       BOTÓN FLOTANTE DE WHATSAPP
+  ═══════════════════════════════════════════════ -->
+  <a
+    href="https://wa.me/5426642220000?text=Hola%20VetCare%20%F0%9F%90%BE%20Quiero%20consultar%20sobre%20un%20turno%20para%20mi%20mascota."
+    target="_blank"
+    class="whatsapp-float"
+    id="whatsapp-float-btn"
+    aria-label="Contactar por WhatsApp"
+  >
+    <div class="whatsapp-float__pulse"></div>
+    <i class="fa-brands fa-whatsapp"></i>
+    <div class="whatsapp-float__tooltip">
+      <span>¡Escribinos!</span>
+      <small>Respondemos en minutos</small>
+    </div>
+  </a>
+
+  <!-- Botón "Volver arriba" -->
+  <button class="back-to-top" id="back-to-top-btn" aria-label="Volver al inicio">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

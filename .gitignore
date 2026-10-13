@@ -1,0 +1,9 @@
+# Archivos ignorados por Git
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
+dist/
+.vscode/settings.json
